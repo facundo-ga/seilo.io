@@ -1,0 +1,39 @@
+body {
+	margin: 12vh;
+	text-align: center;
+	font-size: calc(4vw + 2vh);
+
+	background-image: url('3.gif'); 
+	background-size: cover; 
+	background-position: center; 
+	color: #fff;
+	font-family: sans-serif;
+	letter-spacing: -0.2vw; 
+	overflow: hidden;
+  font-family: "Lacquer", system-ui;
+  margin-top: 200px;
+}
+
+
+.rugrats span {
+	display: inline-block;
+	margin: 0 0.5vw; 
+	transition: color linear 0.5s forwards;
+	-webkit-text-stroke-width: .32vw;
+	-webkit-text-stroke-color: black;
+	text-shadow: .4vw .5vw #000;
+}
+
+.rugrats span {
+	text-transform:capitalize;
+	text-transform:lowercase;
+	animation:caseChange 5s ease infinite forwards;
+}/*
+@keyframes caseChange{
+	from{
+		text-transform:uppercase;
+	}
+	to{
+		text-transform:lowercase;
+	}
+} 
