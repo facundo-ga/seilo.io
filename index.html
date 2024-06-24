@@ -1,16 +1,24 @@
 <!DOCTYPE html>
-<html lang="es" >
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>Reproducción de Audio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" type="image/png" href="Daco_4464115.png">
 </head>
 <body>
-  <div class="rugrats"><span>La </span> <span> verdad </span><span> en </span><span> la </span><span> vida...</span></div>
+
+  <div class="center-container">
+    <button id="play-button" class="round-button">
+      <i class="fas fa-play"></i>
+    </button>
+  </div>
+
+  <div class="rugrats"><span>La </span><span> verdad </span><span> en </span><span> la </span><span> vida...</span></div>
   <div class="rugrats"><span>es </span><span> que </span><span> nada </span><span> es </span><span> neutral,</span></div>
-  <div class="rugrats"><span>Todo </span><span> lo </span><span> que </span><span> no </span><span> te </span><span> acerca, </span></div>
+  <div class="rugrats"><span>Todo </span><span> lo </span><span> que </span><span> no </span><span> te </span><span> hacerca, </span></div>
   <div class="rugrats"><span>Te </span><span> aleja </span><span> de </span><span> lo </span><span> que </span><span> quieres. </span></div>
   <!--
   <div class="rugrats"><span>Nunca </span> <span> dejes </span><span> en </span><span> la </span><span> vida...</span></div>
@@ -18,15 +26,31 @@
   <div class="rugrats"><span>ocupen  </span><span> ... </span>
   <div class="rugrats"><span>el </span><span> lugar </span><span> de </span><span> tus </span><span> sueÑos </span>
   -->
-<div class="bottom-image">
+
+  
+  
+
+  <div class="bottom-image">
     <img src="Daco_4464115.png" alt="Descripción de la imagen">
   </div>
-  
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lacquer&display=swap" rel="stylesheet">
 
-  <script  src="./script.js"></script>
 
+  <audio id="audio" src="aud.mp4"></audio>
+
+ 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lacquer&display=swap" rel="stylesheet">
+
+  <script src="./script.js"></script>
+
+  <script>
+    document.getElementById('play-button').addEventListener('click', function() {
+      var audio = document.getElementById('audio');
+      audio.play();
+    });
+  </script>
 </body>
 </html>
+
