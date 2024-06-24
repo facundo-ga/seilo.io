@@ -2,6 +2,7 @@ body {
 	margin: 12vh;
 	text-align: center;
 	font-size: calc(4vw + 2vh);
+
 	background: whitesmoke; 
 	background-size: cover; 
 	background-position: center; 
@@ -9,8 +10,8 @@ body {
 	font-family: sans-serif;
 	letter-spacing: -0.2vw; 
 	overflow: hidden;
-        font-family: "Lacquer", system-ui;
-        margin-top: 200px;
+  font-family: "Lacquer", system-ui;
+  margin-top: 200px;
 }
 
 
@@ -27,7 +28,7 @@ body {
 	text-transform:capitalize;
 	text-transform:lowercase;
 	animation:caseChange 5s ease infinite forwards;
-}/*
+}
 @keyframes caseChange{
 	from{
 		text-transform:uppercase;
@@ -36,13 +37,14 @@ body {
 		text-transform:lowercase;
 	}
 } 
-*/
+
 
 .bottom-image {
 	position: relative;
-	width: 100%;
+	width: 55%;
 	height: auto;
 	margin-top: 20px; 
+	right: -20%;
   }
   
   .bottom-image img {
@@ -64,4 +66,36 @@ body {
         -webkit-text-stroke-width: .1vw;
         text-shadow: .1vw .15vw #000;
     }
+
+
 }
+.center-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	
+  }
+  
+  .round-button {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #000;
+	color: #fff;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	
+  }
+  
+  .round-button i {
+	font-size: 24px;
+  }
+  
+  .round-button:hover {
+	background-color: #333;
+  }
